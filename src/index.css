@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+5. CSS (Optional)
+You can add some basic styling to make the form and list look better.
+form {
+margin-bottom: 20px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+label {
+display: block;
+margin: 10px 0 5px;
+}
+input {
+padding: 8px;
+margin-right: 10px;
+}
+button {
+padding: 8px 16px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #45a049;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+padding: 8px 0;
+border-bottom: 1px solid #ddd;
 }
