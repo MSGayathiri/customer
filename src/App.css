@@ -1,38 +1,110 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #890b8da6; /* Soft gray-blue for a professional and clean background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
   text-align: center;
+  color: #333; /* Dark gray for a clean, professional look */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px; /* Adds a subtle spacing to the title for a refined look */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background-color: #881010; /* White container for a clean, modern appearance */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 500px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c5ced6; /* Light gray border for a clean look */
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #0073e6; /* Blue border on focus for better visibility */
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #550868b7; /* Professional blue for the primary action button */
   color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #132f49; /* Slightly darker blue on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #7a1157; /* Soft gray background for list items */
+  color: #52040442;
+  margin: 8px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 0 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  li {
+    font-size: 0.9rem;
   }
 }
